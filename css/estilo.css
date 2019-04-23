@@ -1,0 +1,34 @@
+h1{
+	text-align: center;
+	font-size: 100px;
+	font-family: sans-serif;
+}
+
+h2,p{	
+	text-align: center;
+	font-family: sans-serif;
+
+}
+.lado{
+
+	display: block;
+	margin:0 auto;
+	width: 250px;
+}
+
+#video{
+margin-bottom: : 0px;
+}
+#fundo{
+	width: 1350px;
+	height: 450px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	opacity: 1;
+}
+iframe{
+	display: block;
+	margin: 0 auto;
+}
