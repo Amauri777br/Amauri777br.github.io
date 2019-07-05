@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color:rgba(22, 138, 158, 0.842);
+        color:crgb(28, 93, 153);
+    }
+    </style>
+</head>
+<body>
+
+    <script>
+        //Comentario de uma linha
+    console.log("Alo Ha Mundo JavaScript");
+    alert("Saudades do Sublime");
+    window.onload = function(){
+    document.querySelector("h1").textContent = "JS é massa";
+    var paçoca = document.querySelector("h1");
+    paçoca.innerHTML = "<em>JS</em> não é Java!";
+    paçoca.style = "font-size:50px;  / color:deepSkyBlue;";//saudades
+
+    //variavel moderna local
+    let h12 =document.querySelector(".segundoH1");
+    let h13 =document.querySelector("#terceiroH1");
+
+    h12.style = "font-size:10px;";
+    h13.style = "font-size:20px;";
+    let h_uns = document.querySelectorAll("h1");
+    
+    for (let i = 0; i < h_uns.length; i++) 
+        h_uns[i].style = "border:2px dashed white";
+        
+    }
+    </script>
+
+<h1>Introdução à Linguagem JavaScript</h1>
+<h1 class="segundoH1">Segundo H1</h1>
+<h1 id="terceiroH1">Terceiro H1</h1>
+
+
+<div style="text-align: center;">
+    <h2>Exemplo da lâmpada</h2>
+
+    <button onclick="document.querySelector('#lampada').src = 'acesa.jpg'">
+        Acender</button>
+
+    <img src="apagada.jpg" id="lampada"
+        onmouseover="acender()" onmouseout="apagar()"
+    >
+
+    <button  onclick="document.querySelector('#lampada').src = 'apagada.jpg'">
+        Apagar</button>
+
+</div>
+
+<script>
+    var lâmpada = document.querySelector("#lampada");
+    function acender(){lâmpada.src = "acesa.jpg"}
+    function apagar(){lâmpada.src = "apagada.jpg"}
+</script>
+
+</body>
+</html>
